@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pyspark-nested-functions"
+version = "0.0.9"
+description = "Nested fields transformation for pyspark"
+authors = ["Egor Goloshchapov <golosegor@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nestedfunctions"}]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyspark = "^3.1.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "~7.0"
+flake8 = "3.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
